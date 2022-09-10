@@ -4,26 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/form.css">
     <title>Pagina de Inicio</title>
 </head>
 <body>
-    <h1>Registrar Participante</h1>
-    <form action="sendForm()" method="post">
-        <label for="fullname">Nombre Completo</label>
-        <input type="text" name="fullname" id="fullname">
-        <br>
-        <label for="">Estilo</label>
-        <br>
-        <label for="pecho">Pecho</label>
-        <input type="checkbox" name="pecho" id="pecho" value="pecho">
-        <label for="pecho">Crol</label>
-        <input type="checkbox" name="crol" id="crol" value="crol">
-        <label for="pecho">Espalda</label>
-        <input type="checkbox" name="espalda" id="espalda" value="espalda">
-        <label for="pecho">Mariposa</label>
-        <input type="checkbox" name="mariposa" id="mariposa" value="mariposa">
-        <input id="submit" type="submit" value="Enviar">
-    </form>
+    <header>Registro de participantes</header>
+
+    <form id="form" class="topBefore">
+            
+              <input id="name" type="text" placeholder="Nombre del nadador">
+              <br>
+              <br>
+              <label for="">Distancia</label>
+              
+              <select>
+                <option>25 metros</option>
+                <option>50 metros</option>
+                <option>100 metros</option>
+              </select>
+              <br>
+              <br>
+             
+              <label class="container">Croll
+                <input type="checkbox" checked="checked" id="croll">
+                <span class="checkmark"></span>
+              </label>
+              
+              <label class="container">Espalda
+                <input type="checkbox" id="espalda">
+                <span class="checkmark"></span>
+              </label>
+              
+              <label class="container">Mariposa
+                <input type="checkbox" id="mariposa">
+                <span class="checkmark"></span>
+              </label>
+              
+              <label class="container">Pecho
+                <input type="checkbox" id="pecho">
+                <span class="checkmark"></span>
+              </label> 
+              <br>
+          <input id="submit" type="submit" value="Enviar">
+      
+    </form>    
     <script src="../scripts//form.js"></script>
 </body>
 </html>
